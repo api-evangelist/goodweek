@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/goodweek/integrations
+- https://n8n.io/integrations/goodweek/
+- https://composio.dev/toolkits/goodweek
+- https://monid.ai/tools/goodweek
+checked:
+- https://composio.dev/toolkits/goodweek
+- https://monid.ai/tools/goodweek
+- https://n8n.io/integrations/goodweek/
+- https://zapier.com/apps/goodweek/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

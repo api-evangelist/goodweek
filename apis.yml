@@ -1,25 +1,89 @@
 aid: goodweek
+
 name: Goodweek
-description: 'Goodweek is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by true-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.goodweek.com/en/opengraph-image?a435c65ffadf7868
+
+description: 'Goodweek provides an AI management platform that enables enterprises to securely deploy, monitor, and govern AI models across their organization. The platform offers centralized model storage, usage analytics, policy enforcement, and integration capabilities, helping teams work faster, smarter, and safer with AI. It serves various use cases from inbox filtering to financial forecasting, emphasizing visibility, control, and compliance for AI deployments.'
+
 url: https://raw.githubusercontent.com/api-evangelist/goodweek/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- AI
+- Platform
+- Governance
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- true-ventures
+
 common:
+- type: Compliance
+  url: https://www.goodweek.com/en/security
+- type: SecurityTxt
+  url: well-known/goodweek-help-security.txt
+- type: WellKnown
+  url: well-known/goodweek-well-known.yml
+- type: Hosts
+  url: hosts/goodweek-hosts.yml
+- type: Vendors
+  url: vendors/goodweek-vendors.yml
+- type: TermsOfService
+  url: https://www.goodweek.com/en/terms
+- type: Support
+  url: https://help.goodweek.com/en/
+- type: Security
+  url: https://www.goodweek.com/en/security
+- type: PrivacyPolicy
+  url: https://www.goodweek.com/en/privacy-policy
+- type: Blog
+  url: https://www.goodweek.com/en/blog
+- type: GettingStarted
+  url: https://help.goodweek.com/en/collections/19728702-getting-started
+- type: Documentation
+  url: https://help.goodweek.com/
+- type: TrustCenter
+  url: security/goodweek-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/goodweek-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/goodweek-domain-security.yml
 - type: Website
   url: https://goodweek.com
+
+apis: []
+
+x-backed-by:
+- true-ventures
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's documentation is a JavaScript‑rendered site with no machine‑readable API spec discovered.
+  evidence:
+    - url: https://www.goodweek.com
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
